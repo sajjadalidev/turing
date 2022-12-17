@@ -1,3 +1,37 @@
+# Requirements
+
+- node version should be v16.16.0
+- npm version should be 8.5.1
+
+# Folder Structure
+
+Folder Structure:
+
+- public
+- index.html
+  Note: this is a root file of the application
+- src
+  - components
+    - Auth
+      - login
+    - Header
+      - index.js (note: this is the Navbar file)
+    - Home (note: Home Page)
+      - index
+    - config
+      - constant
+      - localStorage
+      - fetchInstance (note:this is interceptor for all request which will validate token expiry)
+    - styles
+      - App.css
+      - index.css
+        note: it includes all general styled components which is used for entire application.
+- App.js
+- index.js
+- .gitingore
+- package.json
+- README.md
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

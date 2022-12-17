@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Navbar */
+.navigation-links {
+  padding: 5px;
+  margin: 0px;
+  background-color: white;
+  border-bottom: 1px solid #d7d2d2;
+  height:60px;
+}
+.navigation-links a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+.navigation-links li {
+  display: inline-block;
+  padding: 10px;
+  text-decoration-style: none;
+}
+.align-right {
+  text-align: right;
+}
+.logo {
+  width: 280px;
+  float: left;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+
+
+/* Login Form */
+
+.login-form{
+  max-width: 500px;
+  margin-left: 33%;
+  margin-top: 75px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+.ant-form{
+  background-color: white;
+  padding: 20px;
+}
+
+/* Home Page */
+.test-title{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: revert;
+}
+.call-detail{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Button in App */
+.ant-btn{
+  border-radius: 0px;
+}
+.ant-modal-content{
+  border-radius: 0px;
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
