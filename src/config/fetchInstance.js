@@ -28,8 +28,6 @@ let customFetcher = async (url, config = {}) => {
     ? localStorage.getItem("auth")
     : null;
 
-  //Proceed with request
-
   config["headers"] = {
     Authorization: `Bearer ${authTokens}`,
   };
@@ -38,8 +36,7 @@ let customFetcher = async (url, config = {}) => {
   let { response, data } = await originalRequest(url, config);
 
   console.log("After Request");
-
-  if (jwt_decode(localStorage.getItem("auth")).exp < 3000) {
+  if (jwt_decode(auth).exp < 599999) {
     authTokens = await refreshToken(authTokens);
 
     config["headers"] = {

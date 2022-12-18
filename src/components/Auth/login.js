@@ -18,12 +18,13 @@ const Login = () => {
     });
     setLoading(true);
     const user = await result.json();
-    if (user) {
+    if (user?.access_token) {
       navigate("/");
       setAuthToken(user.access_token);
       setRefreshToken(user.refresh_token);
     }
   };
+
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
